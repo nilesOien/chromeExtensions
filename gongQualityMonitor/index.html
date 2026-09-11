@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<HEAD>
+  <TITLE>gongQualityMonitor</TITLE>
+  <LINK type="text/css" href="styleSheet.css" media="screen" rel="stylesheet" title="Default" >
+  <meta charset="UTF-8">
+</head>
+
+<BODY>
+
+<H2>Quality Assurance access links for ZeroPoint and AutoVMBI</h2>
+
+<P>
+</p>
+
+<P>
+<!-- commented out because can't have inline javaScript like
+     onChange or onClick in a Chrome extension
+Enter date in YYYY/MM/DD format : <input id="dateBox" maxlength="10"
+                                   size="10" onChange="update();">
+<input type="button" value="Select" onClick="update();">
+New code below - note that IDs are used because they are needed to add handlers -->
+
+Enter date in YYYY/MM/DD format : <input id="dateBox" maxlength="10"
+                                   size="10">
+<input type="button" value="Select" id="updateButton">
+<input type="button" value="-" id="minusButton">
+<input type="button" value="+" id="plusButton">
+
+</p>
+
+<P id="displayDatePara">
+</p>
+
+<P id="mainPara">
+Loading...
+</p>
+
+
+<P>
+A "<B>-</b>" in the above table means there is no link
+available for the product at the selected date.
+</p>
+
+<!--
+Use the whole URL rather than simply "abbreviations.html" because
+that allows this to run as a Chrome extension.
+-->
+<P>
+An explanation of the abbreviations used is available
+<A HREF="https://gong2.nso.edu/gongQualityMonitor/abbreviations.html" target="_blank">
+here</a>. 
+</p>
+
+<P>
+ <IMG SRC="bottomLogo.jpg">
+</p>
+
+<script src="javaScript.js"></script>
+
+</body>
+
